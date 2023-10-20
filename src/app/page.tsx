@@ -2,13 +2,16 @@
 
 import styled from "styled-components";
 
-import Category from "@/components/layout/Category";
+import Category from "@/components/home/Category";
+import PostList from "@/components/home/PostList";
 
 export default function Home() {
   return (
     <HomeWrapper>
       <ContentBox>
         <Category />
+
+        <PostList />
       </ContentBox>
     </HomeWrapper>
   );
@@ -26,5 +29,6 @@ const ContentBox = styled.main`
   height: 100%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   padding-top: 5rem;
 `;

@@ -33,6 +33,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           {new Intl.DateTimeFormat("en-US").format(new Date(post.date))}
         </time>
         <h1>{post.title}</h1>
+        <h1>{post.category}</h1>
       </div>
       <MDXContent components={mdxComponents} />
     </article>
